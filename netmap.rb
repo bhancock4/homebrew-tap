@@ -5,21 +5,21 @@
 class Netmap < Formula
   desc "Network topology mapper with a rich terminal UI"
   homepage "https://github.com/bhancock4/netmap"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bhancock4/netmap/releases/download/v1.0.0/netmap_1.0.0_darwin_amd64.tar.gz"
-      sha256 "b66ae12de887a411dd3fe5c738abe8ca86eed039fbcd5fca9d6faa48432b8290"
+      url "https://github.com/bhancock4/netmap/releases/download/v1.1.0/netmap_1.1.0_darwin_amd64.tar.gz"
+      sha256 "5fc80f00b43206a6c07be2aaeb6a4a9a09c91f00b450187e8f09f1580177556f"
 
       define_method(:install) do
         bin.install "netmap"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bhancock4/netmap/releases/download/v1.0.0/netmap_1.0.0_darwin_arm64.tar.gz"
-      sha256 "f43414e4e78c5621eade889ec8b90692222113a70dc625975c0b1a3e6e4b2343"
+      url "https://github.com/bhancock4/netmap/releases/download/v1.1.0/netmap_1.1.0_darwin_arm64.tar.gz"
+      sha256 "4453f7f9283c1a9ec0ffd29a1232ec655c9d91131d2258a3a16cc75d62658390"
 
       define_method(:install) do
         bin.install "netmap"
@@ -29,15 +29,15 @@ class Netmap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bhancock4/netmap/releases/download/v1.0.0/netmap_1.0.0_linux_amd64.tar.gz"
-      sha256 "1387ec740afc78ece8874ec6e512b7d4831b6b6513f6b95fd15ffdcedf9100b6"
+      url "https://github.com/bhancock4/netmap/releases/download/v1.1.0/netmap_1.1.0_linux_amd64.tar.gz"
+      sha256 "84166268b7ab1781533c1486fff558a9ff64fc30df7843e90dbc78f25e24bd7f"
       define_method(:install) do
         bin.install "netmap"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bhancock4/netmap/releases/download/v1.0.0/netmap_1.0.0_linux_arm64.tar.gz"
-      sha256 "9a053c248afc60cc339f812f35ba1434fb9ada4b93514d5eb89a559fcc0fc01c"
+      url "https://github.com/bhancock4/netmap/releases/download/v1.1.0/netmap_1.1.0_linux_arm64.tar.gz"
+      sha256 "7cfccc0c650a8a94c1a267a7ff9d9ac3a16fc8ed75619c721e2ef5c5c8502b6c"
       define_method(:install) do
         bin.install "netmap"
       end
